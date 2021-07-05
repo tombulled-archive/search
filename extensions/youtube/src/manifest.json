@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube",
+  "description": "Search Engine for YouTube",
+  "version": "1.1",
+  "icons": {
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "144": "icons/144.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "YouTube",
+      "search_url": "https://www.youtube.com/results?search_query={searchTerms}",
+      "keyword": "yt",
+      "favicon_url": "https://www.youtube.com/s/desktop/35e75ccf/img/favicon_144x144.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
