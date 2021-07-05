@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub",
+  "description": "Search Engine for GitHub",
+  "version": "1.0",
+  "icons": {
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "120": "icons/120.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "github@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "GitHub",
+      "search_url": "https://github.com/search?q={searchTerms}",
+      "keyword": "gh",
+      "favicon_url": "https://github.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
