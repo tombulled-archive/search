@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Urban Dictionary",
+  "description": "Search Engine for Urban Dictionary",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "114": "icons/114.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "urban-dictionary@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Urban Dictionary",
+      "search_url": "https://www.urbandictionary.com/define.php?term={searchTerms}",
+      "keyword": "ud",
+      "favicon_url": "https://www.urbandictionary.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
