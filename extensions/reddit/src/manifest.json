@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit",
+  "description": "Search Engine for Reddit",
+  "version": "1.0",
+  "icons": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "57": "icons/57.png",
+      "60": "icons/60.png",
+      "72": "icons/72.png",
+      "76": "icons/76.png",
+      "96": "icons/96.png",
+      "114": "icons/114.png",
+      "120": "icons/120.png",
+      "144": "icons/144.png",
+      "152": "icons/152.png",
+      "180": "icons/180.png",
+      "192": "icons/192.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Reddit",
+      "search_url": "https://www.reddit.com/search/?q={searchTerms}",
+      "keyword": "r",
+      "favicon_url": "https://www.reddit.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
