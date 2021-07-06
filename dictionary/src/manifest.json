@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Dictionary",
+  "description": "Search Engine for Dictionary",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "246": "icons/246.png",
+      "492": "icons/492.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dictionary@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Dictionary",
+      "search_url": "https://www.dictionary.com/browse/{searchTerms}",
+      "keyword": "def",
+      "favicon_url": "https://www.dictionary.com/assets/favicon-d73532382d3943b0fef5b78554e2ee9a.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
