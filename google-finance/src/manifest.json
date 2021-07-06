@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Google Finance",
+  "description": "Search Engine for Google Finance",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "120": "icons/120.png",
+      "152": "icons/152.png",
+      "167": "icons/167.png",
+      "180": "icons/180.png",
+      "192": "icons/192.png",
+      "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-finance@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Finance",
+      "search_url": "https://www.google.com/finance?q={searchTerms}",
+      "keyword": "gf",
+      "favicon_url": "https://ssl.gstatic.com/finance/favicon/favicon.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
