@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "OpenStreetMap",
+  "description": "Search Engine for OpenStreetMap",
+  "version": "1.0",
+  "icons": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "120": "icons/120.png",
+      "192": "icons/192.png",
+      "194": "icons/194.png",
+      "256": "icons/256.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "openstreetmap@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "OpenStreetMap",
+      "search_url": "https://www.openstreetmap.org/search?query={searchTerms}",
+      "keyword": "osm",
+      "favicon_url": "https://www.openstreetmap.org/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
