@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Giphy",
+  "description": "Search Engine for Giphy",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "246": "icons/246.png",
+      "492": "icons/492.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "giphy@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Giphy",
+      "search_url": "https://giphy.com/search/{searchTerms}",
+      "keyword": "gif",
+      "favicon_url": "https://giphy.com/static/img/favicon.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
