@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter",
+  "description": "Search Engine for Twitter",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png",
+      "1024": "icons/1024.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "twitter@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Twitter",
+      "search_url": "https://twitter.com/search?q={searchTerms}",
+      "keyword": "tw",
+      "favicon_url": "https://abs.twimg.com/favicons/twitter.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
