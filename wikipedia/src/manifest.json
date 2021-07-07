@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Wikipedia",
+  "description": "Search Engine for Wikipedia",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "246": "icons/246.png",
+      "492": "icons/492.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wikipedia@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Wikipedia",
+      "search_url": "https://en.wikipedia.org/w/index.php?search={searchTerms}",
+      "keyword": "w",
+      "favicon_url": "https://www.wikipedia.org/static/favicon/wikipedia.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
