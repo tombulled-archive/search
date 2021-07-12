@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Amazon",
+  "description": "Search Engine for Amazon",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "400": "icons/400.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "amazon@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Amazon",
+      "search_url": "https://www.amazon.co.uk/s?k={searchTerms}",
+      "keyword": "amz",
+      "favicon_url": "https://www.amazon.co.uk/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
