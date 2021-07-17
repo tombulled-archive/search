@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Rotten Tomatoes",
+  "description": "Search Engine for Rotten Tomatoes",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rotten-tomatoes@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Rotten Tomatoes",
+      "search_url": "https://www.rottentomatoes.com/search?search={searchTerms}",
+      "keyword": "rt",
+      "favicon_url": "https://www.rottentomatoes.com/assets/pizza-pie/images/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
