@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Music",
+  "description": "Search Engine for YouTube Music",
+  "version": "1.0",
+  "icons": {
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "72": "icons/72.png",
+      "96": "icons/96.png",
+      "144": "icons/144.png",
+      "192": "icons/192.png",
+      "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-music@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "YouTube Music",
+      "search_url": "https://music.youtube.com/search?q={searchTerms}",
+      "keyword": "ytm",
+      "favicon_url": "https://music.youtube.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
