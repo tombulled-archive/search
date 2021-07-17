@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "eBay",
+  "description": "Search Engine for eBay",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "192": "icons/192.png",
+      "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ebay@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "eBay",
+      "search_url": "https://www.ebay.co.uk/sch/i.html?_nkw={searchTerms}",
+      "keyword": "eb",
+      "favicon_url": "https://pages.ebay.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
