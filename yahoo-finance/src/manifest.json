@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Yahoo Finance",
+  "description": "Search Engine for Yahoo Finance",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "192": "icons/192.png",
+      "300": "icons/300.png",
+      "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "yahoo-finance@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Yahoo Finance",
+      "search_url": "https://uk.finance.yahoo.com/q?s={searchTerms}",
+      "keyword": "yf",
+      "favicon_url": "https://s.yimg.com/cv/apiv2/default/fp/20180826/icons/favicon_y19_32x32.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
