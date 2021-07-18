@@ -2,10 +2,11 @@
 Simple Search Engine WebExtensions
 
 ## About
-foo.
+With [Mozilla](https://www.mozilla.org/en-US/) announcing the [deprecation of OpenSearch support](https://blog.mozilla.org/addons/2019/10/15/search-engine-add-ons-to-be-removed-from-addons-mozilla-org/) for [Firefox](https://www.mozilla.org/en-GB/firefox/new/), custom user-defined search engines (such as those from [Mycroft Project](https://mycroftproject.com/)) are now required to take on the form of [WebExtensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions). This repository contains a series of simple WebExtensions comprising of a single [manifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json) and a collection of icons.
 
+These browser extensions are currently only available for Firefox, with future support planned for Chrome.
 
-## Search Engines
+## [Search Engines](https://addons.mozilla.org/en-US/firefox/user/16933360/)
 | Icon                                                                                                | Name                                                     | Source                                                                                         | Install                                                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Amazon](https://github.com/tombulled/search/raw/main/amazon/src/icons/48.png)                     | **[Amazon](https://www.amazon.co.uk/)**                  | *[manifest](https://github.com/tombulled/search/blob/main/amazon/src/manifest.json)*           | [![Firefox](https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/search-engine-amazon/)           |
