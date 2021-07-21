@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "FF Add-ons",
+  "description": "Search Engine for Firefox Add-ons",
+  "version": "1.0",
+  "icons": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png",
+      "1024": "icons/1024.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-addons@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Firefox Add-ons",
+      "search_url": "https://addons.mozilla.org/en-GB/firefox/search/?q={searchTerms}",
+      "keyword": "amo",
+      "favicon_url": "https://addons.cdn.mozilla.net/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
