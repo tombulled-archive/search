@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Google Maps",
+  "description": "Search Engine for Google Maps",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "192": "icons/192.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-maps@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Maps",
+      "search_url": "https://www.google.co.uk/maps/search/{searchTerms}",
+      "keyword": "gm",
+      "favicon_url": "https://www.google.com/images/branding/product/ico/maps15_bnuw3a_32dp.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
