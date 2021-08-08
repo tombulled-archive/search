@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "PyPI",
+  "description": "Search Engine for PyPI",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pypi@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "PyPI",
+      "search_url": "https://pypi.org/search/?q={searchTerms}",
+      "keyword": "pypi",
+      "favicon_url": "https://pypi.org/static/images/favicon.6a76275d.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
