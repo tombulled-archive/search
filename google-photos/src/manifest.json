@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Google Photos",
+  "description": "Search Engine for Google Photos",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png",
+      "1024": "icons/1024.png",
+      "1200": "icons/1200.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-photos@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Photos",
+      "search_url": "https://photos.google.com/search/{searchTerms}",
+      "keyword": "gp",
+      "favicon_url": "https://ssl.gstatic.com/social/photosui/images/logo/1x/photos_64dp.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
