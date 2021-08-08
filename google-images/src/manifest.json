@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Google Images",
+  "description": "Search Engine for Google Images",
+  "version": "1.0",
+  "icons": {
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "256": "icons/256.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-images@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Images",
+      "search_url": "https://www.google.co.uk/search?tbm=isch&q={searchTerms}",
+      "keyword": "gi",
+      "favicon_url": "https://images.google.co.uk/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
