@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "DuckDuckGo Images",
+  "description": "Search Engine for DuckDuckGo Images",
+  "version": "1.0",
+  "icons": {
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "128": "icons/128.png",
+      "152": "icons/152.png",
+      "256": "icons/256.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "duckduckgo-images@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "DuckDuckGo Images",
+      "search_url": "https://duckduckgo.com/?iar=images&q={searchTerms}",
+      "keyword": "di",
+      "favicon_url": "https://duckduckgo.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
