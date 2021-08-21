@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Honey",
+  "description": "Search Engine for Honey",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "246": "icons/246.png",
+      "492": "icons/492.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "honey@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Honey",
+      "search_url": "https://www.joinhoney.com/search?q={searchTerms}",
+      "keyword": "honey",
+      "favicon_url": "https://cdn.joinhoney.com/images/favicon-32.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
