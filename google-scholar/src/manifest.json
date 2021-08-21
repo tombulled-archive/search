@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Google Scholar",
+  "description": "Search Engine for Google Scholar",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "120": "icons/120.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-scholar@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Scholar",
+      "search_url": "https://scholar.google.co.uk/scholar?q={searchTerms}",
+      "keyword": "gs",
+      "favicon_url": "https://scholar.google.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
