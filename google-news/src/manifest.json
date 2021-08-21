@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Google News",
+  "description": "Search Engine for Google News",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "120": "icons/120.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-news@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google News",
+      "search_url": "https://news.google.com/search?q={searchTerms}",
+      "keyword": "gn",
+      "favicon_url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w48",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
