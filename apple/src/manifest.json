@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Apple",
+  "description": "Search Engine for Apple",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "1024": "icons/1024.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "apple@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Apple",
+      "search_url": "https://www.apple.com/uk/search/{searchTerms}?src=globalnav",
+      "keyword": "apple",
+      "favicon_url": "https://www.apple.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
