@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Google Translate",
+  "description": "Search Engine for Google Translate",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-translate@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Translate",
+      "search_url": "https://translate.google.com/?text={searchTerms}",
+      "keyword": "gt",
+      "favicon_url": "https://ssl.gstatic.com/translate/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
