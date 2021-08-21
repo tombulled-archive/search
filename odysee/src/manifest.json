@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Odysee",
+  "description": "Search Engine for Odysee",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "1024": "icons/1024.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "odysee@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Odysee",
+      "search_url": "https://odysee.com/$/search?q={searchTerms}",
+      "keyword": "odysee",
+      "favicon_url": "https://lbry2.vanwanet.com/speech/favicon-png:c.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
