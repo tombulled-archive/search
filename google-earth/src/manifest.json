@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Google Earth",
+  "description": "Search Engine for Google Earth",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "120": "icons/120.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-earth@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Earth",
+      "search_url": "https://earth.google.com/web/search/{searchTerms}/",
+      "keyword": "ge",
+      "favicon_url": "https://www.gstatic.com/earth/00-favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
