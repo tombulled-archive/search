@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Steam",
+  "description": "Search Engine for Steam",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "240": "icons/240.png",
+      "480": "icons/480.png",
+      "600": "icons/600.png",
+      "768": "icons/768.png",
+      "1024": "icons/1024.png",
+      "2048": "icons/2048.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "steam@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Steam",
+      "search_url": "https://store.steampowered.com/search/?term={searchTerms}",
+      "keyword": "steam",
+      "favicon_url": "https://store.steampowered.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
