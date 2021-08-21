@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Emojipedia",
+  "description": "Search Engine for Emojipedia",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "57": "icons/57.png",
+      "60": "icons/60.png",
+      "72": "icons/72.png",
+      "76": "icons/76.png",
+      "114": "icons/114.png",
+      "120": "icons/120.png",
+      "144": "icons/144.png",
+      "152": "icons/152.png",
+      "180": "icons/180.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "emojipedia@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Emojipedia",
+      "search_url": "https://emojipedia.org/search/?q={searchTerms}",
+      "keyword": "emoji",
+      "favicon_url": "https://emojipedia.org/static/img/favicons/favicon-96x96.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
