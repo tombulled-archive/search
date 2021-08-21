@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "IMDb",
+  "description": "Search Engine for IMDb",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "1024": "icons/1024.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "imdb@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "IMDb",
+      "search_url": "https://www.imdb.com/find?q={searchTerms}",
+      "keyword": "imdb",
+      "favicon_url": "https://www.imdb.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
