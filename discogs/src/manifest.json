@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Discogs",
+  "description": "Search Engine for Discogs",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "492": "icons/492.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "discogs@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Discogs",
+      "search_url": "https://www.discogs.com/search/?q={searchTerms}",
+      "keyword": "discogs",
+      "favicon_url": "https://s.discogs.com/081486adc952dc77f22bdd4aef0461ba0acad8e8/images/favicon-96x96.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
