@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Apple Music",
+  "description": "Search Engine for Apple Music",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "492": "icons/492.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "apple-music@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Apple Music",
+      "search_url": "https://music.apple.com/gb/search?term={searchTerms}",
+      "keyword": "am",
+      "favicon_url": "https://music.apple.com/assets/favicon/favicon-180-f10a76334177ea08c0b3b35b0269fe16.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
