@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Thesaurus",
+  "description": "Search Engine for Thesaurus",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "180": "icons/180.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "thesaurus@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Thesaurus",
+      "search_url": "https://www.thesaurus.com/browse/{searchTerms}",
+      "keyword": "syn",
+      "favicon_url": "https://www.thesaurus.com/hp-assets/_next/static/images/favicon-tcom-0d297be7e698b98c9da809d355171253.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
