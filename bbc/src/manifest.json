@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "BBC",
+  "description": "Search Engine for BBC",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png",
+      "1000": "icons/1000.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bbc@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "BBC",
+      "search_url": "https://www.bbc.co.uk/search?q={searchTerms}",
+      "keyword": "bbc",
+      "favicon_url": "https://www.bbc.co.uk/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
