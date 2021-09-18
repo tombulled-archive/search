@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Flathub",
+  "description": "Search Engine for Flathub",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "200": "icons/200.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "flathub@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Flathub",
+      "search_url": "https://flathub.org/apps/search/{searchTerms}",
+      "keyword": "flat",
+      "favicon_url": "https://www.flathub.org/assets/themes/flathub/favicon-32x32.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
