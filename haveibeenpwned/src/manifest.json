@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Have I Been Pwned",
+  "description": "Search Engine for Have I Been Pwned",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "512": "icons/512.png",
+      "1001": "icons/1001.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "haveibeenpwned@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Have I Been Pwned",
+      "search_url": "https://haveibeenpwned.com/account/{searchTerms}",
+      "keyword": "pwned",
+      "favicon_url": "https://haveibeenpwned.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
