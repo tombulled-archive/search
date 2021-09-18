@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Google Podcasts",
+  "description": "Search Engine for Google Podcasts",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "120": "icons/120.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-podcasts@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Podcasts",
+      "search_url": "https://podcasts.google.com/search/{searchTerms}",
+      "keyword": "pod",
+      "favicon_url": "https://ssl.gstatic.com/podcasts/podcasts_48.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
