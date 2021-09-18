@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Snapcraft",
+  "description": "Search Engine for Snapcraft",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "400": "icons/400.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "snapcraft@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Snapcraft",
+      "search_url": "https://snapcraft.io/search?q={searchTerms}",
+      "keyword": "snap",
+      "favicon_url": "https://assets.ubuntu.com/v1/0f3c662c-ico_32px.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
