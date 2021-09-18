@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Google Play",
+  "description": "Search Engine for Google Play",
+  "version": "1.0",
+  "icons": {
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-play@search-engine.tombulled",
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google Play",
+      "search_url": "https://play.google.com/store/search?q={searchTerms}",
+      "keyword": "play",
+      "favicon_url": "https://www.gstatic.com/android/market_images/web/favicon_v2.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
